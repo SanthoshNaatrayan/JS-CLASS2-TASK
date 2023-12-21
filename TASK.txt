@@ -1,0 +1,24 @@
+*Write a blog on the difference between Document object and Window object *
+
+In this blog we are going to see about Document object and Window object , for that first we have to understand the basics of DOM and BOM.
+
+DOM(Document Object Model) is a programming interface for HTML document , that allows to modify the document. This model defines the logical structure of the HTML document.
+To load that document DOM creates an heirarchy of tree that is known as DOM Tree. It deals with Object that is loaded in the current page.
+Whereas BOM (Browser Object Model) is a browse-specific convention. It deals with the Objects that are loaded outside the webpage like tab ,browser window,desktop screen etc.,
+
+
+Window Object:
+     represents a browser window that displays the contents of the webpage. It is the object of the browser.
+     Window is the global object in a browser. Whenever a browser is open window object is the very first thing that gets loaded , this window object contains properties like length,width , name of url,search etc., We can't access this window object.
+    Thus,  Window object is the "topmost object of the DOM heirarchy".
+    If we want to access the window, it is through window only "window.window" .Thus properties of window object cannot be accessed by document object.
+    Window is a part of BOM .
+
+Document Object :
+     represents a webpage that is loaded in the browser. It is the object of the window property.
+     Document object is our html, aspx, php, or other document that will be loaded into the browser.Actually, "the document gets loaded inside the Window object".
+     In Layman's term , when a HTML document is loaded in the web page then it becomes a Document object.
+     By accessing the document object , we can access the element in the HTML page.
+
+     As Document object is inside the window , we can access the document from a window  using "window.document". Thus properties of document object like title,body, cookies etc., can be accessed by window object.
+     This document is part of both BOM and DOM.
